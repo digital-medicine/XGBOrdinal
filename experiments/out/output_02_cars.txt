@@ -1,0 +1,9 @@
+Epochs: 100
+
+Mean squared error (xgb): 0.006 ± 0.006
+Mean squared error (statsmodels): 0.086 ± 0.014
+Mean squared error (lgbm): 0.093 ± 0.017
+
+Mean absolute error (xgb): 0.006 ± 0.005
+Mean absolute error (statsmodels): 0.083 ± 0.012
+Mean absolute error (lgbm): 0.084 ± 0.011

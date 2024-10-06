@@ -1,0 +1,9 @@
+Epochs: 100
+
+Mean squared error (ordinal): 13.1 ± 0.308
+Mean squared error (classifier): 14.671 ± 0.323
+Mean squared error (regressor): 9.491 ± 0.188
+
+Mean absolute error (ordinal): 1.985 ± 0.028
+Mean absolute error (classifier): 2.062 ± 0.029
+Mean absolute error (regressor): 2.166 ± 0.023
