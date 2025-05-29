@@ -41,8 +41,8 @@ class XGBOrdinal(XGBClassifier):
     def fit(self, X: ArrayLike, y: ArrayLike, **fit_params: Any) -> "XGBOrdinal":
         # Identify the number of unique ordinal classes
         self.unique_classes = np.unique(y)
-        self.number_classes = len(self.unique_classes)
-        self.number_clfs = self.number_classes - 1
+        self.n_classes_ = len(self.unique_classes)
+        self.number_clfs = self.n_classes_ - 1
         self.clfs = {}  # Dictionary to hold the binary classifiers
 
         # Extract eval_set from fit_params if provided
@@ -85,7 +85,7 @@ class XGBOrdinal(XGBClassifier):
         cumulative_probas = np.array([self.clfs[i].predict_proba(X)[:, 1] for i in range(self.number_clfs)]).T
 
         # Calculate probabilities for ordinal classification
-        probas = np.zeros((X.shape[0], self.number_classes))
+        probas = np.zeros((X.shape[0], self.n_classes_))
 
         probas[:, 0] = 1 - cumulative_probas[:, 0]
         probas[:, 1:-1] = cumulative_probas[:, :-1] - cumulative_probas[:, 1:]
