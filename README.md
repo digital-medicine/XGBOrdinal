@@ -1,14 +1,29 @@
 # XGBOrdinal
 
-This GitHub repository contains the code used in the paper
+This GitHub repository contains the code used in the paper:
 
-`XGBOrdinal: An XGBoost Extension for Ordinal Data`
+> [_**XGBOrdinal: An XGBoost Extension for Ordinal Data**_](https://doi.org/10.3233/shti250380)  
+> **Fabian Kahl, Iris Kahl, Stephan M. Jonas**  
+> **Presented at MIE 2025**  
+> Published in _Studies in Health Technology and Informatics_, Volume 327, Pages 462–466  
 
-by Fabian Kahl, Iris Kahl, Stephan M. Jonas, the paper is currently submitted.
+### Citation
+```bibtex
+@article{kahl2025xgbordinal,
+  title={XGBOrdinal: An XGBoost Extension for Ordinal Data},
+  author={Kahl, Fabian and Kahl, Iris and Jonas, Stephan M},
+  journal={Studies in health technology and informatics},
+  volume={327},
+  pages={462--466},
+  year={2025}
+}
+```
 
 ## Requirements
 To install the required packages, run the following command:
 ```bash
+git clone https://github.com/digital-medicine/XGBOrdinal.git
+cd XGBOrdinal
 pip install -r requirements.txt
 ```
 
