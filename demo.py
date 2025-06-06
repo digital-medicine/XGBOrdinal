@@ -38,12 +38,14 @@ if optimize_params:
         'learning_rate': [0.1, 0.5],
         'subsample': [0.8, 1.0],
     }
-    optimal_params = GridSearchCV(estimator=xgbo.XGBOrdinal(unique_classes=np.unique(y_train)),
+    print("Grid search cross-validation started.")
+    optimal_params = GridSearchCV(estimator=xgbo.XGBOrdinal(),
                                             param_grid=param_grid, cv=5)
     optimal_params.fit(X_train_df, y_train)
+    print("Grid search cross-validation finished.")
     model = optimal_params.best_estimator_
 else:
-    model = xgbo.XGBOrdinal(unique_classes=np.unique(y_train))
+    model = xgbo.XGBOrdinal()
     model.fit(X_train_df, y_train)
 
 # Make predictions and calculate metrics
@@ -53,4 +55,3 @@ mae = mean_absolute_error(y_test, y_test_pred)
 
 print(f'Mean squared error (ordinal): {mse:.3f}')
 print(f'Mean absolute error (ordinal): {mae:.3f}')
-
