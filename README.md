@@ -19,8 +19,13 @@ This GitHub repository contains the code used in the paper:
 }
 ```
 
-## Requirements
-To install the required packages, run the following command:
+## Installation
+You can install **XGBOrdinal** using `pip`:
+```bash
+pip install xgbordinal
+```
+
+Alternatively, to install from source:
 ```bash
 git clone https://github.com/digital-medicine/XGBOrdinal.git
 cd XGBOrdinal
