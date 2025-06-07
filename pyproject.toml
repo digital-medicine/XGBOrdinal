@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "xgbordinal"
+version = "1.0.1"
+authors = [
+  { name="Fabian Kahl", email="fabian.kahl@ukbonn.de" },
+]
+description = "XGBOrdinal: An XGBoost Extension for Ordinal Data"
+readme = "README.md"
+license = {file = "LICENSE.txt"}
+dependencies = [
+    "scikit-learn>=1.3.0",
+    "xgboost>=2.0.3",
+    "pandas>=2.0.3"
+]
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: Other/Proprietary License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/digital-medicine/XGBOrdinal"
+Repository = "https://github.com/digital-medicine/XGBOrdinal"
+Issues = "https://github.com/digital-medicine/XGBOrdinal/issues"
