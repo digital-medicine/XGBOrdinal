@@ -2,11 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
-## [1.1.1] - 2023-06-06
+## [1.0.1] - 2023-06-06
 
 ### Added
 
-- Prints in demos and fixed a minor bug in demo.py.
+- Prints in demos and fixes a minor bug in demo.py.
 
 ## [1.0.0] - 2025-05-29
 
