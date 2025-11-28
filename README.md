@@ -9,13 +9,13 @@ This GitHub repository contains the code used in the paper:
 
 ### Citation
 ```bibtex
-@article{kahl2025xgbordinal,
+@incollection{kahl2025xgbordinal,
   title={XGBOrdinal: An XGBoost Extension for Ordinal Data},
   author={Kahl, Fabian and Kahl, Iris and Jonas, Stephan M},
-  journal={Studies in health technology and informatics},
-  volume={327},
+  booktitle={Intelligent Health Systems--From Technology to Data and Knowledge},
   pages={462--466},
-  year={2025}
+  year={2025},
+  publisher={IOS Press}
 }
 ```
 
